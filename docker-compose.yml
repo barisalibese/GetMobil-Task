@@ -30,7 +30,7 @@ services:
     - "3000:3000"
     volumes:
     - ./src/frontend:/var/www/html/frontend
-    - /var/www/html/frontend/.node_modules
+      /var/www/html/frontend/node_modules
     - /var/www/html/frontend/.next
     working_dir: /var/www/html/frontend
   composer:

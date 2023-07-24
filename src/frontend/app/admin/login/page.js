@@ -28,7 +28,7 @@ export default function Login() {
                               <div className="kt-login__head">
                                   <h3 className="kt-login__title">Sign In To Admin</h3>
                               </div>
-                              <form method="post" className="kt-form" action={loginAction} encType="multipart/form-data">
+                              <form method="post" className="kt-form" action={loginAction}>
                                   <div className="input-group">
                                       <input
                                           className="form-control"

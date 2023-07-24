@@ -3,9 +3,9 @@ import {cookies} from "next/headers";
 class BaseApiService {
     defaultHeaders = {
         'Cache': 'no-cache',
-        "clientID": "3",
-        "ClientSecret": "8TnKrDxNrzkwcN9hpwF9TNUg5zlkZ4DwFjISLfeu",
-        "GrantType": "password"
+        "clientID": process.env.ClientID,
+        "ClientSecret": process.env.ClientSecret,
+        "GrantType": process.env.GrantType
     }
 
     async postJSON(endPoint, payload=null, headers = null) {

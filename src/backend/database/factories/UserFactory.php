@@ -19,9 +19,9 @@ class UserFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'email' => 'barisalibese@gmail.com',
+            'email' => 'admin@example.com',
             'email_verified_at' => now(),
-            'password' => bcrypt('warfare94')
+            'password' => bcrypt('Test123')
         ];
     }
 
